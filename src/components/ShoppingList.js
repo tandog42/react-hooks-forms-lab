@@ -12,14 +12,6 @@ function ShoppingList({ items, onItemFormSubmit }) {
     setInput(e.target.value);
   }
 
-  const displayItems = items
-  .filter(displayItem => {
-    if ("" === input) return displayItem;
-
-    if (displayItem.name === input) return displayItem;
-    
-    
-  });
 
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
